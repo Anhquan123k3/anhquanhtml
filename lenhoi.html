@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>越南文化介绍网站</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+    <style>
+        body {
+            width: auto;
+            height: auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+        nav {
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #000000;
+            position: relative;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            position: relative;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        .search-container {
+            margin: 20px;
+        }
+        .le1 {
+            position: absolute;
+            width: 170px;
+            height: 170px;
+            margin: 0;
+            background: #dadada;
+            border: 6px solid #b8b8b871;
+            padding: 10px;
+            background: url(denhung.png);
+            background-size: cover;
+            border-radius: 130px 150px 110px 170px / 100px 110px 120px 120px;
+            top: -50px;
+            left: -110px;
+        }
+        .so1 {
+            width: 800px;
+            height: 300px;
+            background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+            position: relative;
+            margin: 100px auto 0;
+            border-radius: 15px;
+        }
+        .chu1 {
+            position: relative;
+            color: ;
+        }
+        .quiz-container {
+            margin: 20px auto; /* Centers the div horizontally */
+            text-align: left;
+            position: relative; /* Ensure the position is relative or static */
+            width: fit-content; /* Adjust the width to fit its content */
+        }
+        .quiz-question {
+            font-weight: bold;
+        }
+        .quiz-answer {
+            margin: 10px 0;
+        }
+    </style>
+    <script>
+        function checkAnswer() {
+            const userAnswer = document.getElementById("quiz-answer").value;
+            const correctAnswer = "农历三月初十";
+            const resultContainer = document.getElementById("quiz-result");
+            
+            if (userAnswer === correctAnswer) {
+                resultContainer.textContent = "正确！";
+                resultContainer.style.color = "green";
+            } else {
+                resultContainer.textContent = "错误，再试一次！";
+                resultContainer.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="phunu.html">女性</a>
+            <a href="amnhac.html">音乐</a>
+            <a href="amthuc.html">美食</a>
+            <a href="lenhoi.html">节日</a>
+            <a href="nghethuat.html">艺术</a>
+        </nav>
+    </header>
+    <h1>节日</h1>
+    <div class="so1">
+        <div class="le1" id="div1">
+        </div>
+        <h1>雄王诞</h1>
+        <h2>LỄ HỘI ĐỀN HÙNG</h2>
+        <p class="chu1">雄王诞（越南语：Giỗ Tổ Hùng Vương / 𣋼祖雄王 或 Lễ hội đền Hùng / 礼会殿雄）是越南于农历三月初十日纪念雄王（鸿庞氏）的日子；2007开始，雄王诞为越南的国定假日之一，也是越南公众假日中唯二属于越南传统节日的假日之一（另一个以传统节日为假期的是农历新年）。
+            雄王诞为纪念第一位在越南建国的领袖雄王，在2007年以前为地方性节日；2016年，雄王诞出游的游客总数达到700万。
+            虽然雄王诞的官方名称是“雄王忌日”（越南语：Giỗ Tổ Hùng Vương），但并没有确实指出雄王的具体逝世日期。
+            2012年12月6日，联合国教科文组织将雄王诞列为世界非物质文化遗产。可以知道雄王节对越南国民具有非常重要的意义。
+        </p>
+    </div>
+    <div class="quiz-container">
+        <p class="quiz-question">问：雄王诞是几月几日？</p>
+        <input type="text" id="quiz-answer" class="quiz-answer" placeholder="请输入答案">
+        <button onclick="checkAnswer()">提交</button>
+        <p id="quiz-result"></p>
+    </div>
+</body>
+</html>

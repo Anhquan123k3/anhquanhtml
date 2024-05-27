@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>越南文化介绍网站</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            backdrop-filter: blur(11111111111115111px);
+            background-color: #92929286;
+            color: #ffffff;
+            font-size:170%;
+            box-shadow: #000;
+            padding: 10% 0;
+            margin: auto;
+            text-align: center;
+            border-bottom: 2px solid #00000000;
+            background-size: cover;
+            background-image: url(6.png);
+        }
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 2px solid #ccc;
+        }
+        footer .footer-item {
+            margin: 0 15px;
+        }
+        .tongguan{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+      }
+.vietnam_img,.imgvietnam{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+                <div><h1>越南文化</h1></div>
+
+    </header>
+    <nav>        <a href="index.html">主页</a>
+
+        <a href="phunu.html">女性</a>
+        <a href="amnhac.html">音乐</a>
+        <a href="amthuc.html">美食</a>
+        <a href="lenhoi.html">节日</a>
+        <a href="nghethuat.html">艺术</a>
+    </nav>
+    <section class="tongguan">
+    <section id="phunu">
+        <div class="vietnam">
+            <div class="vietnam_img">
+                <img src="1.png" alt="" width="260px">
+            </div>
+            <h2>VIET NAM<br></h2>
+            <p>
+                     越南拥有丰富多样的文化，受到多个民族和悠久历史传统的影响。越南文化包括艺术、民间文化、建筑、美食等多个方面。<br>
+    
+         越南文化也通过传统艺术如水上木偶戏、歌剧、山歌、庙堂艺术等反映出来。越南的建筑融合了民间元素和宗教信仰，有着诸如香山寺、古都顺化、古城会安等历史遗迹。<br>
+    
+         此外，越南美食也是文化的重要组成部分，有着象征性的菜肴如越南河粉、法式面包、以及其他各种传统美食。越南文化经历了历史的起伏，但仍保持着独特的风貌和特殊的吸引力。<br>
+            </p>
+        </div>    </section>
+    <section id="amnhac">
+        <div class="vietnam2">
+            <div class="imgvietnam"><img src="2.png" alt="" width="260"></div>
+            <h2>越南</h2>
+            <p>越南是一个位于东南亚的国家，拥有丰富多样的历史文化。 越南拥有高山和绵长的海岸线，拥有多样而美丽的自然景观。 越南文化已经发展了多个世纪，并受到中国、日本、法国和美国等许多不同文化的影响。<br>
+    
+                越南人口民族和语言多样化，其中京族占多数，还有其他少数民族，如岱族、泰族、芒族和高棉族。<br>
+                
+                越南经济近年来快速增长，特别是自新冠肺炎疫情以来，越南已成为世界领先的农产品生产和出口国之一，工业和服务业也大幅增长。<br>
+                
+                旅游业在越南经济中也发挥着重要作用，拥有河内、胡志明市、顺化、会安和岘港等热门目的地。 越南拥有美丽的自然景观、悠久的文化遗产和多样化的美食，每年吸引数百万游客。<br></p>
+        </div>    </section>
+    
+</section>
+    <footer>
+        <p class="time">当前时间: <span id="showtime">00:00:00</span></p>
+        <p>_</p>
+        <p class="time2">停留时间: <span id="counttime">00:00:00</span></p>
+        
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('nav a').hover(
+            function() {
+                $(this).css('background-color', '#ddd').css('color', '#000');
+            },
+            function() {
+                $(this).css('background-color', '#fff').css('color', '#333');
+            }
+        );
+    });
+    </script>
+        <script>
+            window.onload = function() {
+                // Get references to the span elements
+                var showtime = document.getElementById("showtime");
+                var counttime = document.getElementById("counttime");
+    
+                // Function to update the time display
+                function updateTime() {
+                    var now = new Date();
+                    var hours = String(now.getHours()).padStart(2, '0');
+                    var minutes = String(now.getMinutes()).padStart(2, '0');
+                    var seconds = String(now.getSeconds()).padStart(2, '0');
+                    var currentTimeString = hours + ":" + minutes + ":" + seconds;
+    
+                    // Display current time
+                    showtime.textContent = currentTimeString;
+    
+                    // Calculate elapsed time
+                    var elapsedTime = new Date(now - startTime);
+                    var elapsedHours = String(elapsedTime.getUTCHours()).padStart(2, '0');
+                    var elapsedMinutes = String(elapsedTime.getUTCMinutes()).padStart(2, '0');
+                    var elapsedSeconds = String(elapsedTime.getUTCSeconds()).padStart(2, '0');
+                    var elapsedTimeString = elapsedHours + ":" + elapsedMinutes + ":" + elapsedSeconds;
+    
+                    // Display elapsed time
+                    counttime.textContent = elapsedTimeString;
+                }
+    
+                // Start time
+                var startTime = new Date();
+    
+                // Update time every second
+                setInterval(updateTime, 1000);
+            };
+        </script>
+</body>
+</html>

@@ -39,6 +39,25 @@
         .search-container {
     margin: 20px;
 }
+dl{
+    background-image: url(22.png);
+    background-size: cover;
+    background-color: #ace0f9;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+a{
+    text-decoration: solid;
+    color: #000;
+}
+a:hover{
+    background-color: #ace0f9;
+    border-radius: 7px;
+}
+.lianjie{
+    padding-top: 30%;
+}
 #search-input {
     padding: 5px;
     font-size: 16px;
@@ -80,6 +99,40 @@ section {
             text-align: center;
 
         }
+        .hahaha {
+    width: 200px; /* Điều chỉnh chiều rộng của slideshow */
+    height: 200px; /* Điều chỉnh chiều cao của slideshow */
+    overflow: hidden; /* Ẩn các phần ảnh vượt ra khỏi vùng chứa */
+    position: relative; /* Cho phép định vị tuyệt đối các ảnh bên trong */
+  }
+
+  #lalala {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ vùng chứa */
+    position: absolute; /* Đặt ảnh chồng lên nhau */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Ban đầu ẩn tất cả các ảnh */
+    transition: opacity 1s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+  }
+
+  #lalala:nth-child(1) {
+    animation: fade 8s infinite; /* Animation cho ảnh đầu tiên */
+  }
+
+  #lalala:nth-child(2) {
+    animation: fade 8s 4s infinite; /* Animation cho ảnh thứ hai, trễ 4s */
+  }
+
+  #lalala:nth-child(3) {
+    animation: fade 8s 8s infinite; /* Animation cho ảnh thứ ba, trễ 8s */
+  }
+
+  @keyframes fade {
+    0%, 100% { opacity: 0; }
+    5%, 95% { opacity: 1; }
+  }
 </style>
 <header>
     <nav>
@@ -92,7 +145,16 @@ section {
     </nav>
 </header>
 <body >
-    <section>
+
+
+    <dl><div class="lianjie">
+        <li ><a href="#jieshao">介绍</a></li>
+        <li><a href="#wenhua">文化</a></li>
+        <li><a href="#tuji">图集</a></li></div>
+    </dl>
+
+
+    <section id="jieshao">
     <div class="search-container" >
         <input type="text" id="search-input" placeholder="搜索！！！">
         <button onclick="searchKeyword()">搜🔍</button>
@@ -106,14 +168,31 @@ section {
                 <img src="10.png" alt="" width="260px">
             </div>
             <h2>VIET NAM<br></h2>
-            <p>
-                     越南拥有丰富多样的文化，受到多个民族和悠久历史传统的影响。越南文化包括艺术、民间文化、建筑、美食等多个方面。<br>
-    
-         越南文化也通过传统艺术如水上木偶戏、歌剧、山歌、庙堂艺术等反映出来。越南的建筑融合了民间元素和宗教信仰，有着诸如香山寺、古都顺化、古城会安等历史遗迹。<br>
-    
-         此外，越南美食也是文化的重要组成部分，有着象征性的菜肴如越南河粉、法式面包、以及其他各种传统美食。越南文化经历了历史的起伏，但仍保持着独特的风貌和特殊的吸引力。<br>
-            </p>
+            <p><b>越南女性在社会中扮演着重要的角色，她们以勤劳、坚韧和智慧著称。越南文化深受儒家思想影响，强调家庭价值观，女性在家庭中扮演着贤妻良母的角色。同时，越南女性也积极参与社会经济活动，她们在各行各业中展现出自己的才华和能力。</b><br>
+
+                以下是越南女性的一些特点：
+                <ol>
+                    <li>            勤劳能干： 越南女性以勤劳著称，她们在家庭和工作中都承担着重要的责任。许多越南女性在农田里辛勤劳作，为家庭的生计做出贡献。同时，她们也积极参与到城市中的各种工作中，如服务业、制造业和教育行业等。
+                    </li>
+<li>                坚韧不拔： 越南经历了长期的战争和困难时期，越南女性在这些困难中展现出了坚韧不拔的精神。她们在逆境中保持乐观，积极面对生活的挑战，为家庭和国家的未来努力奋斗。
+</li>                
+<li>                智慧聪颖： 越南女性重视教育，她们在学业上表现出色。许多越南女性在国内外接受高等教育，并在各自的领域取得了成就。她们在科学、技术、文学和艺术等领域都有杰出的代表。
+</li>                
+<li>                家庭观念强： 越南女性重视家庭，她们在家庭中扮演着重要的角色。她们照顾家庭成员的日常生活，教育子女，传承家庭的价值观。同时，她们也积极支持丈夫的事业，为家庭的幸福和稳定做出贡献。
+</li>                
+<li>                积极参与社会经济活动： 越南女性积极参与社会经济活动，她们在各行各业中展现出自己的才华和能力。她们在政府、企业、教育和医疗等领域都有重要的代表。越南女性的参与为国家的经济发展和社会进步做出了重要贡献。
+</li>                
+<li>                重视教育： 越南女性认为教育是改变命运的重要途径，她们努力为下一代提供更好的教育机会。许多越南女性在家庭中担任教育者的角色，教育子女成为有知识、有道德、有担当的人。
+</li>                
+<li>                时尚爱美： 越南女性注重外表，她们喜欢穿着时尚的服装，打扮得体。越南的传统服装奥黛（Ao Dai）是越南女性的代表性服装，展现了她们的优雅和美丽。
+</li>                
+<li>                尊重传统文化： 越南女性尊重传统文化，她们传承着越南的传统习俗和价值观。她们在节日庆典中穿着传统服装，参与传统的仪式和活动，保持着对祖先和文化的敬畏之心。</ol>
+</li>                
+                总的来说，越南女性是越南社会中不可或缺的重要力量。她们以勤劳、坚韧、智慧和家庭观念强的特点，为家庭和社会做出了重要贡献。同时，她们也积极参与社会经济活动，展现出自己的才华和能力，为国家的繁荣和发展贡献力量。
+                </p>
         </div> 
+        </section>
+        <section id="wenhua">
         <div class="vietnam2">
             <div class="imgvietnam">
                 <img src="2.png" alt="" width="260">
@@ -132,47 +211,60 @@ section {
 
     </div>
 </section>
+<section class="hahaha" id="tuji">
+    <img id="lalala" src="13.png" alt="Phụ nữ Việt Nam 1">
+    <img id="lalala" src="12.png" alt="Phụ nữ Việt Nam 2">
+    <img id="lalala" src="14.png" alt="Phụ nữ Việt Nam 3">
+</section>
 
 </body>
 </html>
 <script>
     function searchKeyword() {
-    // Xóa các đoạn văn đã được đánh dấu trước đó
-    removeHighlights();
+        // Xóa các đoạn văn đã được đánh dấu trước đó
+        removeHighlights();
 
-    // Lấy giá trị từ ô input
-    const keyword = document.getElementById('search-input').value.toLowerCase();
+        // Lấy giá trị từ ô input
+        const keyword = document.getElementById('search-input').value.trim().toLowerCase();
 
-    // Lấy tất cả các đoạn văn trong nội dung
-    const paragraphs = document.querySelectorAll('.content p');
+        // Kiểm tra xem từ khóa có rỗng không
+        if (keyword === "") return;
 
-    paragraphs.forEach(paragraph => {
-        const text = paragraph.textContent.toLowerCase();
-        const index = text.indexOf(keyword);
+        // Lấy tất cả các phần section
+        const sections = document.querySelectorAll('section');
 
-        if (index !== -1 && keyword !== "") {
-            const span = document.createElement('span');
-            span.className = 'highlight';
-            span.textContent = paragraph.textContent.substr(index, keyword.length);
+        sections.forEach(section => {
+            // Lấy nội dung của section
+            const sectionContent = section.textContent.trim().toLowerCase();
             
-            const before = document.createTextNode(paragraph.textContent.substr(0, index));
-            const after = document.createTextNode(paragraph.textContent.substr(index + keyword.length));
-            
-            paragraph.textContent = ''; // Xóa nội dung hiện tại
-            paragraph.appendChild(before);
-            paragraph.appendChild(span);
-            paragraph.appendChild(after);
-        }
-    });
-}
+            // Kiểm tra xem từ khóa có xuất hiện trong nội dung của section không
+            if (sectionContent.includes(keyword)) {
+                // Tạo một RegExp để tìm kiếm toàn bộ từ khóa, kể cả các trường hợp khớp không chính xác
+                const regex = new RegExp(keyword, 'gi');
 
-function removeHighlights() {
-    const highlights = document.querySelectorAll('.highlight');
-    highlights.forEach(span => {
-        const parent = span.parentNode;
-        parent.replaceChild(document.createTextNode(span.textContent), span);
-        parent.normalize();
-    });
-}
+                // Tạo mảng các kết quả tìm kiếm trong nội dung section
+                const matches = [...sectionContent.matchAll(regex)];
+
+                // Đánh dấu tất cả các kết quả tìm kiếm
+                matches.forEach(match => {
+                    const span = document.createElement('span');
+                    span.className = 'highlight';
+                    span.textContent = match[0];
+
+                    section.innerHTML = section.innerHTML.replace(match[0], span.outerHTML);
+                });
+            }
+        });
+    }
+
+    function removeHighlights() {
+        const highlights = document.querySelectorAll('.highlight');
+        highlights.forEach(span => {
+            const parent = span.parentNode;
+            const textNode = document.createTextNode(span.textContent);
+            parent.replaceChild(textNode, span);
+        });
+    }
 
 </script>
+

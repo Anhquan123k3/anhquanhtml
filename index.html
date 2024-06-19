@@ -16,7 +16,7 @@
         header {
             backdrop-filter: blur(11111111111115111px);
             background-color: #92929286;
-            color: #ffffff;
+            color: #fb0000;
             font-size:170%;
             box-shadow: #000;
             padding: 10% 0;
@@ -24,8 +24,16 @@
             text-align: center;
             border-bottom: 2px solid #00000000;
             background-size: cover;
-            background-image: url(6.png);
-        }
+        }video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hoặc contain, tùy thuộc vào cách bạn muốn video hiển thị */
+  z-index: -1; /* Đặt video ở phía sau nội dung khác */
+}
+
         nav {
             background-color: #fff;
             padding: 10px 0;
@@ -82,6 +90,11 @@
     <header>
 
                 <div><h1>越南文化</h1></div>
+                <video autoplay muted loop playsinline>
+                    <source src="1.mp4" type="video/mp4">
+                    <source src="video.webm" type="video/webm">
+                  </video>
+                  
 
     </header>
     <nav>        <a href="index.html">主页</a>
@@ -120,7 +133,9 @@
                 旅游业在越南经济中也发挥着重要作用，拥有河内、胡志明市、顺化、会安和岘港等热门目的地。 越南拥有美丽的自然景观、悠久的文化遗产和多样化的美食，每年吸引数百万游客。<br></p>
         </div>    </section>
     
+       
 </section>
+
     <footer>
         <p class="time">当前时间: <span id="showtime">00:00:00</span></p>
         <p>_</p>
